@@ -1,0 +1,87 @@
+.boton-amarillo {
+    color: $blanco;
+    background-color: $amarillo;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-weight: $black;
+    border: 1px solid transparent;
+    transition: 300ms all;
+
+    &:hover {
+        background-color: transparent;
+        color: $negro;
+        border: 1px solid $amarillo;
+    }
+}
+.boton-verde {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: $blanco;
+    background-color: $verde;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: $black;
+    border: 1px solid transparent;
+    transition: 300ms all;
+
+    &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: $negro;
+        border: 1px solid $verde;
+    }
+}
+.boton-rojo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: $blanco;
+    background-color: $rojo;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: $black;
+    border: 1px solid transparent;
+    transition: 300ms all;
+
+    &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: $negro;
+        border: 1px solid $rojo;
+    }
+}
+.boton-azul {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: $blanco;
+    background-color: $azul;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: $black;
+    border: 1px solid transparent;
+    transition: 300ms all;
+
+    &:hover {
+        background-color: transparent;
+        color: $negro;
+        border: 1px solid $azul;
+    }
+}
+.hover-blanco {
+    &:hover {
+        color: $blanco;
+    }
+}
+@include tablet {
+    .boton-verde {
+        width: 25rem;
+        margin: 2rem 0;
+    }
+}

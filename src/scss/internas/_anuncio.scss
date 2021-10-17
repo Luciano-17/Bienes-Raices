@@ -1,0 +1,13 @@
+.imagen-anuncio {
+    margin-bottom: 5rem;
+
+    img {
+        width: 100%;
+    }
+}
+.caracteristica-anuncio {
+    justify-content: flex-start !important;
+    .caracteristica {
+        margin-right: 5rem;
+    }
+}

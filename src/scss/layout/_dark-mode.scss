@@ -1,0 +1,53 @@
+.dark-mode {
+    &:hover {
+        cursor: pointer;
+    }
+}
+.body-darkMode {
+    background-color: $negro;
+    color: $blanco;
+
+    .propiedad {
+        background-color: $grisOscuro !important;
+        border: 1px solid #000000 !important;
+    }
+    .caracteristica img {
+        filter: invert(80%);
+    }
+    .boton-amarillo {
+        &:hover {
+            color: $blanco;
+        }
+    }
+    .boton-verde {
+        &:hover {
+            color: $blanco;
+        }
+    }
+    .boton-rojo {
+        &:hover {
+            color: $blanco;
+        }
+    }
+    .boton-azul {
+        &:hover {
+            color: $blanco;
+        }
+    }
+    .blog a {
+        color: $blanco !important;
+    }
+    .formulario {
+        .fieldset {
+            border: 1px solid $grisOscuro;
+            input, textarea, select {
+                background-color: $grisOscuro;
+                border: $grisClaro;
+                color: $blanco;
+            }
+        }
+        .boton-verde {
+            border: 1px solid $verde;
+        }
+    }
+}

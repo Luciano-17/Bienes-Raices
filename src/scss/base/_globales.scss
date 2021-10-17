@@ -1,0 +1,60 @@
+html {
+    font-size: 38%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $fuente_principal;
+    line-height: 1.8;
+    background-color: $blanco;
+    color: $negro;
+}
+p {
+    font-size: 3rem;
+}
+.contenedor {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: 300ms all;
+    color: $negro;
+}
+img, picture {
+    width: 100%;
+    display: block;
+}
+h1, h2, h3 {
+    margin: 3rem 0;
+    font-weight: 300;
+    text-align: center;   
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4.5rem;
+}
+h3 {
+    font-size: 4rem;
+}
+h4 {
+    font-size: 3.5rem;
+}
+
+@include tablet {
+    .contenedor {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+}
+@include desktop {
+    .contenedor {
+        max-width: 160rem;
+        margin: 0 auto;
+    }
+}

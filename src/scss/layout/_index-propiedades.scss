@@ -1,0 +1,76 @@
+.propiedades {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .propiedad {
+        background-color: #cfcccc;
+        border: 1px solid #bbbaba;
+
+        margin-bottom: 5rem;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .datos-propiedad {
+        padding: 2rem;
+        a {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+.caracteristicas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    .caracteristica {
+        display: flex;
+        gap: 2rem;
+        p {
+            font-weight: $black;
+        }
+        img {
+            height: 7rem;
+            margin: 3rem 0;
+        }
+    }
+}
+.texto-propiedad {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.precio-propiedad {
+    color: $verde;
+    font-weight: $black;
+    font-size: 4rem;
+    margin: 0;
+}
+.boton-ver-todos {
+    margin: 5rem 2rem;
+}
+
+@include tablet {
+    .propiedades {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 5rem;
+        padding: 0;
+
+        .propiedad {
+            margin-bottom: 0;
+        }
+    }
+    .caracteristicas {
+        .caracteristica {
+            gap: 1rem;
+        }
+    }
+    .boton-ver-todos {
+        margin: 5rem 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

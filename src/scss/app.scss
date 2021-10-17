@@ -1,0 +1,26 @@
+// BASE
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/botones';
+// END BASE
+
+// INTERNAS
+@import 'internas/nosotros';
+@import 'internas/contacto';
+@import 'internas/anuncio';
+@import 'internas/entrada';
+@import 'internas/admin';
+// END INTERNAS
+
+// LAYOUT
+@import 'layout/header';
+@import 'layout/dark-mode';
+@import 'layout/index-nosotros';
+@import 'layout/index-propiedades';
+@import 'layout/hero';
+@import 'layout/index-blog';
+@import 'layout/footer';
+// END LAYOUT

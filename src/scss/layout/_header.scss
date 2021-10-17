@@ -1,0 +1,111 @@
+.webp .inicio {
+    background-image: url(../img/header.webp);
+}
+.no-webp .inicio {
+    background-image: url(../img/header.jpg);
+}
+
+.contenedor-header {
+    background-position: center center;
+    background-size: cover;
+    height: 90rem;
+}
+.base {
+    background-color: $grisOscuro;
+    padding-bottom: 5rem;
+}
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        .logo {
+            width: 50rem;
+        }
+    }
+    h1 {
+        color: $blanco;
+        padding-bottom: 5rem;
+        margin-left: 3rem;
+        text-align: left;
+    }
+}
+.contenedor-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .utilidades-navegacion {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5rem;
+    }
+    .utilidad {
+        width: 4rem;
+        margin-right: 3rem;
+        filter: invert(80%);
+    }
+}
+.menu-mobile {
+    filter: invert(25%) !important;
+}
+.navegacion-principal {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear;
+}
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a {
+        color: $blanco;
+        margin-left: 2rem;
+        padding: 1rem;
+        &:hover {
+            color: $amarillo;
+        }
+    }
+}
+
+@include tablet {
+    .contenido-header{
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5rem;
+            .logo {
+                width: 50rem;
+            }
+        }
+    }
+    .contenedor-navegacion {
+        display: flex;
+        flex-direction: row;
+        .navegacion-principal {
+            visibility: visible;
+            opacity: 1;
+            a:first-of-type {
+                margin-left: 0;
+            }
+        }
+        .menu-mobile {
+            display: none;
+        }
+    }
+    .navegacion {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,29 @@
+.footer {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: $grisOscuro;
+    margin-top: 5rem;
+}
+.contenido-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacion-footer {
+    flex-direction: row;
+
+    a {
+        text-align: left;
+    }
+}
+.copyright {
+    color: $blanco;
+    font-size: 2.5rem;
+}
+
+@include tablet {
+    .contenido-footer {
+        flex-direction: row;
+    }
+}

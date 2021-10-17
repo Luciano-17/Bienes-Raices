@@ -1,0 +1,31 @@
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 10rem;
+
+    
+    .texto-nos {
+        .titulo {
+            margin: 3rem 0;
+            font-size: 3rem;
+        }
+        .texto {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@include tablet {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        .texto-nos {
+            .titulo {
+                margin: 0;
+            }
+        }
+    }
+}

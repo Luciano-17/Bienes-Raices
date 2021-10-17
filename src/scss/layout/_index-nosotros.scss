@@ -1,0 +1,38 @@
+.contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid $grisClaro;
+    margin-left: 0;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+.icono {
+    height: 15rem;
+    width: auto;
+}
+.titulo-servicio {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.texto-servicio {
+    text-align: center;
+}
+
+@include tablet {
+    .contenido-nosotros {
+        flex-direction: row;
+    }
+    .servicios {
+        border-bottom: none;
+    }
+}
